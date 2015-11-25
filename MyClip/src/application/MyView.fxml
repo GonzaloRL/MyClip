@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OneController">
    <children>
       <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <bottom>
@@ -54,7 +54,7 @@
                   </VBox>
                   <AnchorPane GridPane.columnIndex="2" GridPane.rowIndex="2">
                      <children>
-                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="105.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="105.0" layoutY="13.0" onMouseClicked="#handleSend" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
                            <image>
                               <Image url="@../../../../../Documentos/MisDocumentos/UEM/DI/examenes/2015-16/send.png" />
                            </image>
