@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <Pane prefHeight="20.0" style="-fx-background-color: blue;" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <VBox GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <Label style="-fx-font-size: 20; -fx-text-fill: blue; -fx-font-weight: bold;" text="My profile">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="25.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ImageView fx:id="imageRaw" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../images/yohierba.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="Mr. Birdman">
+                           <VBox.margin>
+                              <Insets left="50.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label style="-fx-text-fill: grey; -fx-font-style: italic;" text="Programmers can design">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <AnchorPane GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="105.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+                           <image>
+                              <Image url="@../../../../../Documentos/MisDocumentos/UEM/DI/examenes/2015-16/send.png" />
+                           </image>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+         </center>
+         <top>
+            <AnchorPane prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: blue;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+                     <image>
+                        <Image url="@../../../../../Documentos/MisDocumentos/UEM/DI/examenes/2015-16/github_white.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="173.0" layoutY="18.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="133.0" style="-fx-background-color: blue; -fx-text-fill: white; -fx-border-color: white; -fx-font-weight: bold;" text="View in GitHub" AnchorPane.leftAnchor="173.0" AnchorPane.rightAnchor="194.0" />
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
