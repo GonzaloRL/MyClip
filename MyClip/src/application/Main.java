@@ -18,7 +18,7 @@ public class Main extends Application {
 		try {
 
 			this.primaryStage = primaryStage;
-			this.primaryStage.setTitle("MyClip");
+			this.primaryStage.setTitle("My GitHub Profile");
 			this.primaryStage.setX(200);
 			this.primaryStage.setY(200);
 			primaryStage.show();
@@ -38,7 +38,7 @@ public class Main extends Application {
 			rootLayout = (AnchorPane) loader.load();
 
 			// Show the scene containing the root layout.
-			Scene scene = new Scene(rootLayout, 600, 500);
+			Scene scene = new Scene(rootLayout, 500, 400);
 			scene.getStylesheets().add(
 					getClass().getResource("application.css").toExternalForm());
 			

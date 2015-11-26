@@ -32,17 +32,20 @@
                      <children>
                         <Label style="-fx-font-size: 20; -fx-text-fill: blue; -fx-font-weight: bold;" text="My profile">
                            <VBox.margin>
-                              <Insets bottom="10.0" left="25.0" top="10.0" />
+                              <Insets bottom="10.0" left="30.0" />
                            </VBox.margin>
                         </Label>
-                        <ImageView fx:id="imageRaw" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                        <ImageView fx:id="imageRaw" fitHeight="150.0" fitWidth="168.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
                            <image>
-                              <Image url="@../images/yohierba.jpg" />
+                              <Image url="@profilephoto.png" />
                            </image>
-                        </ImageView>
-                        <Label text="Mr. Birdman">
                            <VBox.margin>
-                              <Insets left="50.0" top="20.0" />
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Label styleClass="namelabel" text="Jay R.">
+                           <VBox.margin>
+                              <Insets left="70.0" top="20.0" />
                            </VBox.margin>
                         </Label>
                         <Label style="-fx-text-fill: grey; -fx-font-style: italic;" text="Programmers can design">
@@ -78,7 +81,7 @@
                         <Image url="@../../../../../Documentos/MisDocumentos/UEM/DI/examenes/2015-16/github_white.png" />
                      </image>
                   </ImageView>
-                  <Button layoutX="173.0" layoutY="18.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="133.0" style="-fx-background-color: blue; -fx-text-fill: white; -fx-border-color: white; -fx-font-weight: bold;" text="View in GitHub" AnchorPane.leftAnchor="173.0" AnchorPane.rightAnchor="194.0" />
+                  <Button layoutX="100.0" layoutY="15.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="133.0" style="-fx-background-color: blue; -fx-text-fill: white; -fx-border-color: white; -fx-font-weight: bold;" text="View in GitHub" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="15.0" />
                </children>
             </AnchorPane>
          </top>
