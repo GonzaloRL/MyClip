@@ -62,7 +62,7 @@
                      <children>
                         <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="105.0" layoutY="13.0" onMouseClicked="#handleSend" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
                            <image>
-                              <Image url="@../../../../../Documentos/MisDocumentos/UEM/DI/examenes/2015-16/send.png" />
+                              <Image url="@send.png" />
                            </image>
                            <effect>
                               <DropShadow />
@@ -84,7 +84,7 @@
                <children>
                   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
                      <image>
-                        <Image url="@../../../../../Documentos/MisDocumentos/UEM/DI/examenes/2015-16/github_white.png" />
+                        <Image url="@github_white.png" />
                      </image>
                   </ImageView>
                   <Button layoutX="100.0" layoutY="15.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="133.0" style="-fx-background-color: #008080; -fx-text-fill: white; -fx-border-color: white; -fx-font-weight: bold;" text="View in GitHub" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="15.0" />

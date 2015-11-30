@@ -8,10 +8,11 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
+
 public class Main extends Application {
 
 	private AnchorPane rootLayout;
-	private Stage primaryStage;
+	public Stage primaryStage;
 	
 	@Override
 	public void start(Stage primaryStage) {
@@ -48,17 +49,13 @@ public class Main extends Application {
 	        OneController controller = loader.getController();
 	        controller.setMainApp(this);
 
-			// // Give the controller access to the main app.
-			// RootLayoutController controller = loader.getController();
-			// controller.setMainApp(this);
-
 			primaryStage.show();
 
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
-
+	
 	public static void main(String[] args) {
 		launch(args);
 	}
