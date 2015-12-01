@@ -1,24 +1,24 @@
 package application;
 
-import java.io.File;
 import java.io.IOException;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
-import javafx.stage.Modality;
 import javafx.stage.Stage;
-import application.Main;
 
 /**
- * The controller for the root layout. The root layout provides the basic
- * application layout containing a menu bar and space where other JavaFX
- * elements can be placed.
+ * The only controller for the whole application.
  * 
  * @author ernesto
  */
 public class OneController {
+	
+	//not using yet
+	@FXML
+	private ImageView imageRaw;
 
     // Reference to the main application
     private Main mainApp;
@@ -33,8 +33,9 @@ public class OneController {
     }
 
 	/**
-     * Opens a dialog to show birthday statistics.
+     * Opens an stage to send the profile, to be done...
      */
+    
     public void showSendProfile() {
         try {
             // Load the fxml file and create a new stage for the popup.
@@ -47,9 +48,7 @@ public class OneController {
 //            sendStage.initOwner(primaryStage);
             Scene scene = new Scene(page);
             sendStage.setScene(scene);
-
-
-
+            
             sendStage.show();
 
         } catch (IOException e) {
@@ -57,15 +56,16 @@ public class OneController {
         }
     }
     /**
-     * Opens a new stage 
+     * Method to handle the ImageView action in the Main stage 
      */
+    
     @FXML
     private void handleSend() {
     	showSendProfile();
     }
 
     /**
-     * Closes the application.
+     * Closes the application when clicked on Exit in the secondary stage
      */
     @FXML
     private void handleClose() {

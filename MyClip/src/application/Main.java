@@ -3,19 +3,32 @@ package application;
 import java.io.IOException;
 
 import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
+/**
+ * This application shows a profile and sends it 
+ * @author ernesto
+ * @version 1.0-a1
+ * @see OneController
+ */
 
 public class Main extends Application {
 
 	private AnchorPane rootLayout;
 	public Stage primaryStage;
 	
-	@Override
+	@FXML
+	private ImageView imageRaw;
+	
+	
 	public void start(Stage primaryStage) {
+
+		
 		try {
 
 			this.primaryStage = primaryStage;
@@ -25,6 +38,7 @@ public class Main extends Application {
 			primaryStage.show();
 
 			initRootLayout();
+
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -49,7 +63,9 @@ public class Main extends Application {
 	        OneController controller = loader.getController();
 	        controller.setMainApp(this);
 
+//			imageRaw.setEffect(new GaussianBlur());
 			primaryStage.show();
+
 
 		} catch (IOException e) {
 			e.printStackTrace();
