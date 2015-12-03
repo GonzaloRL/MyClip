@@ -25,22 +25,23 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <HBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <children>
-                        <ImageView fx:id="imageRaw" fitHeight="150.0" fitWidth="168.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                        <ImageView fx:id="imageRaw" fitHeight="150.0" fitWidth="168.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
                            <image>
                               <Image url="@profilephoto.png" />
                            </image>
-                           <VBox.margin>
-                              <Insets />
-                           </VBox.margin>
                         </ImageView>
-                        <Label alignment="CENTER" style="-fx-font-size: 20; -fx-text-fill: #008080; -fx-font-weight: bold;" text="My profile">
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Label alignment="CENTER" style="-fx-font-size: 20; -fx-text-fill: #008080; -fx-font-weight: bold;" text="Me differently">
                            <VBox.margin>
                               <Insets />
                            </VBox.margin>
                         </Label>
-                        <Label styleClass="namelabel" text="Jay R.">
+                        <Label styleClass="namelabel" text="Jeremiah L.">
                            <VBox.margin>
                               <Insets top="20.0" />
                            </VBox.margin>
@@ -72,9 +73,27 @@
                   </AnchorPane>
                   <AnchorPane prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="133.0" style="-fx-background-color: #008080; -fx-text-fill: white; -fx-font-weight: bold;" text="View in GitHub" AnchorPane.topAnchor="20.0" />
+                        <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="133.0" style="-fx-background-color: #008080; -fx-text-fill: white; -fx-font-weight: bold; -fx-border-color: #008080;" text="View in GitHub" AnchorPane.topAnchor="20.0" />
                      </children>
                   </AnchorPane>
+                  <HBox alignment="CENTER" GridPane.rowIndex="1">
+                     <children>
+                        <ImageView fx:id="imageRaw1" fitHeight="150.0" fitWidth="168.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@profilephoto.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <ImageView fx:id="imageRaw2" fitHeight="150.0" fitWidth="168.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@profilephoto.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
                </children>
                <BorderPane.margin>
                   <Insets />

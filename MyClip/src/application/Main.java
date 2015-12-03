@@ -53,7 +53,7 @@ public class Main extends Application {
 			rootLayout = (AnchorPane) loader.load();
 
 			// Show the scene containing the root layout.
-			Scene scene = new Scene(rootLayout, 500, 400);
+			Scene scene = new Scene(rootLayout, 600, 400);
 			scene.getStylesheets().add(
 					getClass().getResource("application.css").toExternalForm());
 			
