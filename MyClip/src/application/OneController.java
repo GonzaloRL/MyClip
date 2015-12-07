@@ -40,12 +40,10 @@ public class OneController {
         try {
             // Load the fxml file and create a new stage for the popup.
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getResource("SendView.fxml"));
+            loader.setLocation(Main.class.getResource("../view/SendView.fxml"));
             AnchorPane page = (AnchorPane) loader.load();
             Stage sendStage = new Stage();
             sendStage.setTitle("Send Profile");
-//            sendStage.initModality(Modality.WINDOW_MODAL);
-//            sendStage.initOwner(primaryStage);
             Scene scene = new Scene(page);
             sendStage.setScene(scene);
             
