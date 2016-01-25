@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyController">
+   <children>
+      <TextArea prefHeight="300.0" prefWidth="200.0" promptText="¿Porque usted desea apuntarse a n uestro curso?" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="50.0" />
+      <Button layoutX="134.0" layoutY="262.0" mnemonicParsing="false" onAction="#handleClose" prefHeight="25.0" prefWidth="185.0" style="-fx-background-color: #B45959;" text="ENVIAR Y SALIR" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <TextField layoutX="26.0" layoutY="14.0" promptText="Correo" AnchorPane.bottomAnchor="257.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="7.0" />
+   </children>
+</AnchorPane>

@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OneController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyController">
    <children>
       <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <center>
@@ -29,24 +29,24 @@
                      <children>
                         <ImageView fx:id="imageRaw" fitHeight="150.0" fitWidth="168.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@profilephoto.png" />
+                              <Image url="@java.png" />
                            </image>
                         </ImageView>
                      </children>
                   </VBox>
                   <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
                      <children>
-                        <Label alignment="CENTER" style="-fx-font-size: 20; -fx-text-fill: #008080; -fx-font-weight: bold;" text="Me differently">
+                        <Label alignment="CENTER" style="-fx-font-size: 20; -fx-text-fill: #0F4880; -fx-font-weight: bold;" text="THE FUTURE">
                            <VBox.margin>
                               <Insets />
                            </VBox.margin>
                         </Label>
-                        <Label styleClass="namelabel" text="Jeremiah L.">
+                        <Label styleClass="namelabel" text="Gonzalo R.L">
                            <VBox.margin>
                               <Insets top="20.0" />
                            </VBox.margin>
                         </Label>
-                        <Label style="-fx-text-fill: grey; -fx-font-style: italic;" text="Programmers can design">
+                        <Label style="-fx-text-fill: #1E90FF ; -fx-font-style: italic;" text="La programacion es el futuro">
                            <VBox.margin>
                               <Insets top="5.0" />
                            </VBox.margin>
@@ -73,14 +73,14 @@
                   </AnchorPane>
                   <AnchorPane prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="133.0" style="-fx-background-color: #008080; -fx-text-fill: white; -fx-font-weight: bold; -fx-border-color: #008080;" text="View in GitHub" AnchorPane.topAnchor="20.0" />
+                        <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="133.0" style="-fx-background-color: #0F4880; -fx-text-fill: white; -fx-font-weight: bold; -fx-border-color: #008080;" text="View in GitHub" AnchorPane.topAnchor="20.0" />
                      </children>
                   </AnchorPane>
                   <VBox alignment="CENTER" GridPane.rowIndex="1">
                      <children>
                         <ImageView fx:id="imageRaw1" fitHeight="150.0" fitWidth="168.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@profilephoto.png" />
+                              <Image url="@apple.png" />
                            </image>
                         </ImageView>
                      </children>
@@ -89,7 +89,7 @@
                      <children>
                         <ImageView fx:id="imageRaw2" fitHeight="150.0" fitWidth="168.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@profilephoto.png" />
+                              <Image url="@Python.png" />
                            </image>
                         </ImageView>
                      </children>
@@ -101,7 +101,7 @@
             </GridPane>
          </center>
          <left>
-            <AnchorPane style="-fx-background-color: #008080;" BorderPane.alignment="CENTER">
+            <AnchorPane style="-fx-background-color: #0F4880;" BorderPane.alignment="CENTER">
                <children>
                   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="10.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
                      <image>
@@ -112,7 +112,7 @@
             </AnchorPane>
          </left>
          <right>
-            <AnchorPane prefWidth="50.0" style="-fx-background-color: #008080;" BorderPane.alignment="CENTER" />
+            <AnchorPane prefWidth="50.0" style="-fx-background-color: #0F4880;" BorderPane.alignment="CENTER" />
          </right>
       </BorderPane>
    </children>

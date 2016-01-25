@@ -10,11 +10,11 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 /**
- * The only controller for the whole application.
- * 
- * @author ernesto
+ *Controlador de la rama OtherStage y unico controlador
+ *
+ * @author Gonzalo RL
  */
-public class OneController {
+public class MyController {
 	
 	//not using yet
 	@FXML
@@ -24,7 +24,7 @@ public class OneController {
     private Main mainApp;
 
     /**
-     * Is called by the main application to give a reference back to itself.
+     * Es llamado por la aplicación principal para dar una referencia de nuevo a sí mismo
      * 
      * @param mainApp
      */
@@ -33,14 +33,15 @@ public class OneController {
     }
 
 	/**
-     * Opens an stage to send the profile, to be done...
+     * Envia el perfil
+     * 
      */
     
     public void showSendProfile() {
         try {
             // Load the fxml file and create a new stage for the popup.
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getResource("../view/SendView.fxml"));
+            loader.setLocation(Main.class.getResource("../view/OtherStage.fxml"));
             AnchorPane page = (AnchorPane) loader.load();
             Stage sendStage = new Stage();
             sendStage.setTitle("Send Profile");
@@ -54,16 +55,18 @@ public class OneController {
         }
     }
     /**
-     * Method to handle the ImageView action in the Main stage 
+     * Metodo que maneja la accion de la imagen en la actividad principal
+     * 
      */
     
     @FXML
     private void handleSend() {
-    	showSendProfile();
+    	showSendProfile(); 
     }
 
     /**
-     * Closes the application when clicked on Exit in the secondary stage
+     * Cierra la aplicacion 
+     * 
      */
     @FXML
     private void handleClose() {

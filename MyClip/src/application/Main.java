@@ -12,9 +12,9 @@ import javafx.stage.Stage;
 
 /**
  * This application shows a profile and sends it 
- * @author ernesto
- * @version 1.0-a1
- * @see OneController
+ * @author Gonzalo Rl
+ * @version 1.1.98
+ * @see MyController
  */
 
 public class Main extends Application {
@@ -32,7 +32,7 @@ public class Main extends Application {
 		try {
 
 			this.primaryStage = primaryStage;
-			this.primaryStage.setTitle("My GitHub Profile");
+			this.primaryStage.setTitle("Ejercicio Recuperacion Gonzalo Rodriguez");
 			this.primaryStage.setX(200);
 			this.primaryStage.setY(200);
 			primaryStage.show();
@@ -49,18 +49,18 @@ public class Main extends Application {
 		try {
 			// Load root layout from fxml file.
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(Main.class.getResource("../view/MyView.fxml"));
+			loader.setLocation(Main.class.getResource("../view/OneStage.fxml"));
 			rootLayout = (AnchorPane) loader.load();
 
 			// Show the scene containing the root layout.
 			Scene scene = new Scene(rootLayout, 600, 400);
 			scene.getStylesheets().add(
-					getClass().getResource("application.css").toExternalForm());
+					getClass().getResource("Colores.css").toExternalForm());
 			
 			primaryStage.setScene(scene);
 			
 	        // Give the controller access to the main app.
-	        OneController controller = loader.getController();
+	        MyController controller = loader.getController();
 	        controller.setMainApp(this);
 
 //			imageRaw.setEffect(new GaussianBlur());
