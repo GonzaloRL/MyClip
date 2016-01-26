@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 /**
  * This application shows a profile and sends it 
  * @author Gonzalo Rl
- * @version 1.1.98
+ * @version 1.2
  * @see MyController
  */
 

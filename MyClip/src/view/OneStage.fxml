@@ -27,7 +27,7 @@
                <children>
                   <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
                      <children>
-                        <ImageView fx:id="imageRaw" fitHeight="150.0" fitWidth="168.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="imageRaw" fitHeight="168.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@java.png" />
                            </image>
@@ -76,24 +76,8 @@
                         <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="133.0" style="-fx-background-color: #0F4880; -fx-text-fill: white; -fx-font-weight: bold; -fx-border-color: #008080;" text="View in GitHub" AnchorPane.topAnchor="20.0" />
                      </children>
                   </AnchorPane>
-                  <VBox alignment="CENTER" GridPane.rowIndex="1">
-                     <children>
-                        <ImageView fx:id="imageRaw1" fitHeight="150.0" fitWidth="168.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@apple.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </VBox>
-                  <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
-                     <children>
-                        <ImageView fx:id="imageRaw2" fitHeight="150.0" fitWidth="168.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@Python.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </VBox>
+                  <VBox alignment="CENTER" GridPane.rowIndex="1" />
+                  <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1" />
                </children>
                <BorderPane.margin>
                   <Insets />
